@@ -109,7 +109,7 @@ ProductName.forEach((element)=>{
             ProductShortNameFunction("LCLO 60ml -");
         }
         else if (ProductName.innerHTML === "Rinotin (RNT)") {
-            ProductPriceDisplay(424);
+            ProductPriceDisplay(503);
             ProductShortNameFunction("RNT -");
         }else if (ProductName.innerHTML === "Lopo Plus (LPP)") {
             ProductPriceDisplay(1131);
@@ -136,10 +136,10 @@ ProductName.forEach((element)=>{
             ProductPriceDisplay(4216);
             ProductShortNameFunction("GMC -");
         }else if (ProductName.innerHTML === "Andrex (ADX)") {
-            ProductPriceDisplay(12437);
+            ProductPriceDisplay(12561);
             ProductShortNameFunction("ADX -");
         }else if (ProductName.innerHTML === "Nausidox (NSD)") {
-            ProductPriceDisplay(3827);
+            ProductPriceDisplay(3865);
             ProductShortNameFunction("NSD -");
         }else if (ProductName.innerHTML === "Colla Max (CLM)") {
             ProductPriceDisplay(3536);
