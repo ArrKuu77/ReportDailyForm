@@ -165,6 +165,18 @@ ProductName.forEach((element)=>{
         }else if (ProductName.innerHTML === "Loratahist (LRH)") {
             ProductPriceDisplay(1159);
             ProductShortNameFunction("LRH -");
+        }else if (ProductName.innerHTML === "Glucose-5D (5D)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("5D -");
+        }else if (ProductName.innerHTML === "SodiumChloride + Glucose(DNS)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("DNS -");
+        }else if (ProductName.innerHTML === "SodiumChloride (NS)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("NS -");
+        }else if (ProductName.innerHTML === "Metronidazole (MTI)") {
+            ProductPriceDisplay(802);
+            ProductShortNameFunction("MTI -");
         }
 
         const productQuantityInput = document.createElement("input");
@@ -539,7 +551,7 @@ SaleReportCreate.addEventListener("click", () => {
         Productcover.append(ProductDetailsReport);
     
     
-        DailyReportNote.append(TodayDate,DrCall,PharmacyCall,ProductiveCall,OrderItem,Productcover,ToDaySaleAmountCode,TargetTextAmountCode,UpdateSaletCode,AchievementAmountCode,BalanceAmountCode);
+        DailyReportNote.append(TodayDate,DrCall,PharmacyCall,ProductiveCall,OrderItem,Productcover,ToDaySaleAmountCode,TargetTextAmountCode,UpdateSaletCode,BalanceAmountCode,AchievementAmountCode);
     }
 
    
