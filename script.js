@@ -567,4 +567,4 @@ About.addEventListener("click",()=>{
 CloseButton.addEventListener("click",()=>{
     AboutDisplay.style.display="none";
     AboutDisplay.classList.remove("ShowAbout");
-})
+});
