@@ -25,6 +25,14 @@ body{
 .Pharmacy,.DoctorCall,.ProductiveCalls{
    width: 30%;
 }
+.ChangeUpdateInputBox{
+    width: 40%;
+    height: 5%;
+    font-size: 14px;
+    font-weight: bold;
+    color: darkslategray;
+    margin: 5% 0%;
+}
 .MonthlyTarget{
     margin-top: 5%;
     text-align: center;
@@ -81,11 +89,19 @@ body{
 .MinusProductListForReport{
     font-size: 13px;
 }
-.TotalAmountAdd,.UpdateSaleButton,.ClearUpdateSale,.BalanceButtom,.AchievementButtom,.SaveTarget,.TotalAmountMinus,.ClearCalculator,.About{
+.TotalAmountAdd,.UpdateSaleButton,.BalanceButtom,.AchievementButtom,.SaveTarget,.TotalAmountMinus,.ClearCalculator,.About,.ChangeUpdateSaleButton{
     margin: 10px 0px;
     padding: 5px;
     background-color: rgb(34, 199, 171);
     color: rgb(58, 59, 145);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.ClearUpdateSale{
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: red;
+    color: white;
     border-radius: 10px;
     border: 2px solid gray;
 }

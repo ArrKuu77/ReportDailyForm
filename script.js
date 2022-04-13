@@ -33,11 +33,11 @@ LightAndDarkMode.addEventListener("click",() => {
         BalanceButtom.classList.remove("ButtonColorAndBGColor");
         AchievementButtom.classList.remove("ButtonColorAndBGColor");
         ClearCalculator.classList.remove("ButtonColorAndBGColor");
-        ClearUpdateSale.classList.remove("ButtonColorAndBGColor");
         Product.classList.remove("ButtonColorAndBGColor");
         TotalAmountAdd.classList.remove("ButtonColorAndBGColor");
         SaleReportCreate.classList.remove("ButtonColorAndBGColor");
         AboutDisplay.classList.remove("ButtonColorAndBGColor");
+        ChangeUpdateSaleButton.classList.remove("ButtonColorAndBGColor");
     }else{
         document.body.classList.remove("lightMood");
         LightAndDarkMode.classList.remove("fas", "fa-moon");
@@ -54,11 +54,11 @@ LightAndDarkMode.addEventListener("click",() => {
         BalanceButtom.classList.add("ButtonColorAndBGColor");
         AchievementButtom.classList.add("ButtonColorAndBGColor");
         ClearCalculator.classList.add("ButtonColorAndBGColor");
-        ClearUpdateSale.classList.add("ButtonColorAndBGColor");
         Product.classList.add("ButtonColorAndBGColor");
         TotalAmountAdd.classList.add("ButtonColorAndBGColor");
         SaleReportCreate.classList.add("ButtonColorAndBGColor");
         AboutDisplay.classList.add("ButtonColorAndBGColor");
+        ChangeUpdateSaleButton.classList.add("ButtonColorAndBGColor");
     }
 })
 
@@ -374,10 +374,14 @@ const TargetTextAmount = document.getElementsByClassName("TargetTextAmount")[0];
 
 
 SaveTargetButtom.addEventListener("click",()=>{
-    TargetTextAmount.innerHTML="";
     const TargetInputNumberChange = parseInt(TargetInput.value);
-    TargetTextAmount.append(TargetInputNumberChange);
-    localStorage.setItem("SaveTarget",TargetInputNumberChange)
+    if (TargetInputNumberChange<0 || !TargetInputNumberChange) {
+        alert("Check your TargetAmount");
+    }else{
+        TargetTextAmount.innerHTML="";
+        TargetTextAmount.append(TargetInputNumberChange);
+        localStorage.setItem("SaveTarget",TargetInputNumberChange)
+    }
 })
 window.addEventListener("load",()=>{
     const saveTarget = localStorage.getItem("SaveTarget");
@@ -568,3 +572,17 @@ CloseButton.addEventListener("click",()=>{
     AboutDisplay.style.display="none";
     AboutDisplay.classList.remove("ShowAbout");
 });
+
+const ChangeUpdateSaleButton = document.getElementsByClassName("ChangeUpdateSaleButton")[0];
+const ChangeUpdateInputBox = document.getElementsByClassName("ChangeUpdateInputBox")[0];
+
+ChangeUpdateSaleButton.addEventListener("click",()=>{
+    const ChangeUpdateInputBoxNumberChange = parseInt(ChangeUpdateInputBox.value);
+    if (ChangeUpdateInputBoxNumberChange < 0 || !ChangeUpdateInputBoxNumberChange) {
+        alert("Check your TargetAmount");
+    }else{
+        UpdateSaleAmount.innerHTML="";
+        UpdateSaleAmount.append(ChangeUpdateInputBoxNumberChange);
+        localStorage.setItem("UpdateSale",ChangeUpdateInputBoxNumberChange);
+    }
+})
