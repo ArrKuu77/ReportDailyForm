@@ -489,8 +489,9 @@ TotalAmountMinus.addEventListener("click",()=>{
         productAmount.forEach((element)=>{
             const productAmountNumber = parseInt(element.innerHTML);
             totalAmountMinus.push(MinusConstant += productAmountNumber);
+            CheckConstant += totalAmountMinus[totalAmountMinus.length-1]
         });
-        MinusAmount.append("Minus Amount -",totalAmountMinus[totalAmountMinus.length-1]);
+        MinusAmount.append("Minus Amount -",CheckConstant);
         UpdateSaleAmountConstant -= totalAmountMinus[totalAmountMinus.length-1];
         UpdateSaleAmount.append(UpdateSaleAmountConstant);
         totalAmountplus.push(totalAmountplus[totalAmountplus.length-1]-totalAmountMinus[totalAmountMinus.length-1]);
@@ -530,6 +531,14 @@ TotalAmountMinus.addEventListener("click",()=>{
         })
         ReportDetailListChild.append(ReportDetailSN,ReportDetailQT)
         ReportForOrderListMinus.append(ReportDetailListChild); 
+        
+        const OneProductMaindiv = document.querySelectorAll(".OneProductMaindiv");
+
+        OneProductMaindiv.forEach((element)=>{
+            element.remove();
+            TotalAmountMinus.style.display="block";
+        })
+        DailyReportcalculator.classList.remove("OpenDailyReportcalculator");
     }
    
 });
@@ -620,7 +629,7 @@ const ProductiveCalls =document.getElementsByClassName("ProductiveCalls")[0];
 
 SaleReportCreate.addEventListener("click", () => {
     DailyReportNote.innerHTML=""
-    if (DoctorCall.value === "" || Pharmacy.value === "" || ProductiveCalls.value === "" || TargetTextAmount.innerHTML === "" || BalanceAmount.innerHTML=== ""|| AchievementAmount.innerHTML === "" || ToDaySaleAmount.innerHTML === "") {
+    if (DoctorCall.value === "" || Pharmacy.value === "" || !DailyReportcalculator.classList.contains("OpenDailyReportcalculator") || ProductiveCalls.value === "" || TargetTextAmount.innerHTML === "" || BalanceAmount.innerHTML=== ""|| AchievementAmount.innerHTML === "" || ToDaySaleAmount.innerHTML === "") {
         alert("Check your From to fill ");
     }else{
       
