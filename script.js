@@ -467,7 +467,7 @@ const AchievementAmount = document.getElementsByClassName("AchievementAmount")[0
 
 AchievementButtom.addEventListener("click",()=>{
     AchievementAmount.innerHTML="";
-    AchievementAmount.append((UpdateSaleAmountConstant/parseInt(TargetTextAmount.innerHTML)*100).toString().slice(0,5),"%")
+    AchievementAmount.append((UpdateSaleAmountConstant/parseInt(TargetTextAmount.innerHTML)*100).toFixed(1),"%")
 
 })
 const ClearUpdateSale = document.getElementsByClassName("ClearUpdateSale")[0];
