@@ -61,326 +61,196 @@ LightAndDarkMode.addEventListener("click",() => {
         ChangeUpdateSaleButton.classList.add("ButtonColorAndBGColor");
     }
 })
+const ProductEditMother = (element) =>{
+    element.classList.add("AddBGColor")
+    const OneProductMaindiv = document.createElement("div");
+    OneProductMaindiv.classList.add("OneProductMaindiv")
 
+   
+    const ProductPriceDisplay = (Number) => {
+        ProductPrice.append(Number);
+    };
+   
+    const ProductShortName = document.createElement("p");
+    ProductShortName.classList.add("ProductShortName");
+    const ProductShortNameFunction = (Name)=>{
+        ProductShortName.append(Name);
+    };
+
+    const ProductName = document.createElement("p")
+    ProductName.textContent = element.innerHTML;
+
+    const ProductEdit = () =>{
+        if(ProductName.innerHTML === "LifeCort (LPI)"){
+            ProductPriceDisplay(1290);
+            ProductShortNameFunction("LPI -");
+        }else if (ProductName.innerHTML === "Ceftrialife (CFIM)") {
+            ProductPriceDisplay(1693);
+            ProductShortNameFunction("CFIM -");
+        }else if (ProductName.innerHTML === "Dicinac (DCN)") {
+            ProductPriceDisplay(2042);
+            ProductShortNameFunction("DCN -");
+        }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 120ml") {
+            ProductPriceDisplay(7500);
+            ProductShortNameFunction("LCLO 120ml -");
+        }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 120ml") {
+            ProductPriceDisplay(7500);
+            ProductShortNameFunction("LCLN 120ml -");
+        }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 60ml") {
+            ProductPriceDisplay(5100);
+            ProductShortNameFunction("LCLO 60ml -");
+        }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 60ml") {
+            ProductPriceDisplay(5100);
+            ProductShortNameFunction("LCLO 60ml -");
+        }
+        else if (ProductName.innerHTML === "Rinotin (RNT)") {
+            ProductPriceDisplay(503);
+            ProductShortNameFunction("RNT -");
+        }else if (ProductName.innerHTML === "Lopo Plus (LPP)") {
+            ProductPriceDisplay(1131);
+            ProductShortNameFunction("LPP -");
+        }else if (ProductName.innerHTML === "Aceta X (ACX)") {
+            ProductPriceDisplay(633);
+            ProductShortNameFunction("ACX -");
+        }else if (ProductName.innerHTML === "Asclop (ACP)") {
+            ProductPriceDisplay(1320);
+            ProductShortNameFunction("ACP -");
+        }else if (ProductName.innerHTML === "Panpro20 (PNP)") {
+            ProductPriceDisplay(848);
+            ProductShortNameFunction("PNP -");
+        }else if (ProductName.innerHTML === "Perilac (PLC)") {
+            ProductPriceDisplay(1131);
+            ProductShortNameFunction("PLC -");
+        }else if (ProductName.innerHTML === "Bacron (BOT)") {
+            ProductPriceDisplay(4242);
+            ProductShortNameFunction("BOT -");
+        }else if (ProductName.innerHTML === "Mextil 500 (MXT)") {
+            ProductPriceDisplay(4619);
+            ProductShortNameFunction("MXT -");
+        }else if (ProductName.innerHTML === "Glammer Capsule (GMC)") {
+            ProductPriceDisplay(4216);
+            ProductShortNameFunction("GMC -");
+        }else if (ProductName.innerHTML === "Andrex (ADX)") {
+            ProductPriceDisplay(12561);
+            ProductShortNameFunction("ADX -");
+        }else if (ProductName.innerHTML === "Nausidox (NSD)") {
+            ProductPriceDisplay(3865);
+            ProductShortNameFunction("NSD -");
+        }else if (ProductName.innerHTML === "Colla Max (CLM)") {
+            ProductPriceDisplay(3536);
+            ProductShortNameFunction("CLM -");
+        }else if (ProductName.innerHTML === "Q-10 Ultra Q10U") {
+            ProductPriceDisplay(21131);
+            ProductShortNameFunction("Q10U -");
+        }else if (ProductName.innerHTML === "Mypar-500 (MYP)") {
+            ProductPriceDisplay(753);
+            ProductShortNameFunction("MYP -");
+        }else if (ProductName.innerHTML === "KORS (ORS)") {
+            ProductPriceDisplay(870);
+            ProductShortNameFunction("KORS -");
+        }else if (ProductName.innerHTML === "Troydom (TDM)") {
+            ProductPriceDisplay(580);
+            ProductShortNameFunction("TDM -");
+        }else if (ProductName.innerHTML === "Paraquick (PQK)") {
+            ProductPriceDisplay(753);
+            ProductShortNameFunction("PQK -");
+        }else if (ProductName.innerHTML === "Cetipen10 (CTP)") {
+            ProductPriceDisplay(522);
+            ProductShortNameFunction("CTP -");
+        }else if (ProductName.innerHTML === "Loratahist (LRH)") {
+            ProductPriceDisplay(1159);
+            ProductShortNameFunction("LRH -");
+        }else if (ProductName.innerHTML === "Glucose-5D (5D)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("5D -");
+        }else if (ProductName.innerHTML === "SodiumChloride + Glucose(DNS)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("DNS -");
+        }else if (ProductName.innerHTML === "SodiumChloride (NS)") {
+            ProductPriceDisplay(1230);
+            ProductShortNameFunction("NS -");
+        }else if (ProductName.innerHTML === "Metronidazole (MTI)") {
+            ProductPriceDisplay(802);
+            ProductShortNameFunction("MTI -");
+        }else if (ProductName.innerHTML === "Ivipime (IVI)") {
+            ProductPriceDisplay(8116);
+            ProductShortNameFunction("IVI -");
+        }else if (ProductName.innerHTML === "Vansafe CP (VSI-CP)") {
+            ProductPriceDisplay(22030);
+            ProductShortNameFunction("VSI-CP");
+        }else if (ProductName.innerHTML === "Sucimed (SMI)") {
+            ProductPriceDisplay(19711);
+            ProductShortNameFunction("SMI -");
+        }else if (ProductName.innerHTML === "Succicort (SCI)") {
+            ProductPriceDisplay(1739);
+            ProductShortNameFunction("SCI -");
+        }else if (ProductName.innerHTML === "Thiotec (TTI)") {
+            ProductPriceDisplay(13914);
+            ProductShortNameFunction("TTI -");
+        }else if (ProductName.innerHTML === "Mexinem (MXI)") {
+            ProductPriceDisplay(33045);
+            ProductShortNameFunction("MXI -");
+        }
+    }
+    const ProductPrice = document.createElement("div");
+    ProductPrice.classList.add("ProductPrice");
+    ProductEdit();
+
+    const productQuantityInput = document.createElement("input");
+    productQuantityInput.classList.add("productQuantityInput");
+    // productQuantityInput.type(Number)
+
+    const productQuantity = document.createElement("p");
+    productQuantity.classList.add("productQuantity");
+
+    const productAmount = document.createElement("p");
+    productAmount.classList.add("productAmount");
+
+    let productAmountTotalConstant = 0;
+
+    productQuantityInput.addEventListener("keyup",(event)=>{
+        productAmount.innerHTML="";
+        productQuantity.innerHTML="";
+        totalAmountCheck.innerHTML="";
+        if (productQuantityInput.value === "") {
+            OneProductMaindiv.remove();
+            // productQuantityInput.value = 0;
+            // // 
+            // productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
+            // productQuantity.append(event.target.value);
+            // OneProductMaindiv.append(productQuantity,productAmount);
+
+        }else{
+            productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
+            if(productAmount.innerHTML === "NaN"){
+                return;
+            }
+            productQuantity.append(event.target.value);
+            OneProductMaindiv.append(productQuantity,productAmount);
+        }
+        const productTotalAmount =document.querySelectorAll(".productAmount");
+        productTotalAmount.forEach((element)=>{
+            const productAmountNumber = parseInt(element.innerHTML);
+            productAmountTotalConstant+=productAmountNumber;
+        });
+        totalAmountCheck.append("Total Amount"+productAmountTotalConstant);
+        productAmountTotalConstant = 0;
+        TotalAmountAdd.style.display="block";
+    })
+    // productAmountArray = productAmount
+    // console.log(productAmountArray,typeof productAmountArray)
+
+   
+    OneProductMaindiv.append(ProductName,ProductShortName,"price",ProductPrice,productQuantityInput)
+    DailyReportcalculator.append(OneProductMaindiv);
+}
 
 ProductName.forEach((element)=>{
     element.addEventListener("click",()=>{
         if (DailyReportcalculator.classList.contains("OpenDailyReportcalculator")) {
-            element.classList.add("AddBGColor")
-            const OneProductMaindiv = document.createElement("div");
-            OneProductMaindiv.classList.add("OneProductMaindiv")
-    
-           
-            const ProductPriceDisplay = (Number) => {
-                ProductPrice.append(Number);
-            };
-           
-            const ProductShortName = document.createElement("p");
-            ProductShortName.classList.add("ProductShortName");
-            const ProductShortNameFunction = (Name)=>{
-                ProductShortName.append(Name);
-            };
-    
-            const ProductName = document.createElement("p")
-            ProductName.textContent = element.innerHTML;
-    
-    
-            const ProductPrice = document.createElement("div");
-            ProductPrice.classList.add("ProductPrice");
-            if(ProductName.innerHTML === "LifeCort (LPI)"){
-                ProductPriceDisplay(1290);
-                ProductShortNameFunction("LPI -");
-            }else if (ProductName.innerHTML === "Ceftrialife (CFIM)") {
-                ProductPriceDisplay(1693);
-                ProductShortNameFunction("CFIM -");
-            }else if (ProductName.innerHTML === "Dicinac (DCN)") {
-                ProductPriceDisplay(2042);
-                ProductShortNameFunction("DCN -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 120ml") {
-                ProductPriceDisplay(7500);
-                ProductShortNameFunction("LCLO 120ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 120ml") {
-                ProductPriceDisplay(7500);
-                ProductShortNameFunction("LCLN 120ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 60ml") {
-                ProductPriceDisplay(5100);
-                ProductShortNameFunction("LCLO 60ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 60ml") {
-                ProductPriceDisplay(5100);
-                ProductShortNameFunction("LCLO 60ml -");
-            }
-            else if (ProductName.innerHTML === "Rinotin (RNT)") {
-                ProductPriceDisplay(503);
-                ProductShortNameFunction("RNT -");
-            }else if (ProductName.innerHTML === "Lopo Plus (LPP)") {
-                ProductPriceDisplay(1131);
-                ProductShortNameFunction("LPP -");
-            }else if (ProductName.innerHTML === "Aceta X (ACX)") {
-                ProductPriceDisplay(633);
-                ProductShortNameFunction("ACX -");
-            }else if (ProductName.innerHTML === "Asclop (ACP)") {
-                ProductPriceDisplay(1320);
-                ProductShortNameFunction("ACP -");
-            }else if (ProductName.innerHTML === "Panpro20 (PNP)") {
-                ProductPriceDisplay(848);
-                ProductShortNameFunction("PNP -");
-            }else if (ProductName.innerHTML === "Perilac (PLC)") {
-                ProductPriceDisplay(1131);
-                ProductShortNameFunction("PLC -");
-            }else if (ProductName.innerHTML === "Bacron (BOT)") {
-                ProductPriceDisplay(4242);
-                ProductShortNameFunction("BOT -");
-            }else if (ProductName.innerHTML === "Mextil 500 (MXT)") {
-                ProductPriceDisplay(4619);
-                ProductShortNameFunction("MXT -");
-            }else if (ProductName.innerHTML === "Glammer Capsule (GMC)") {
-                ProductPriceDisplay(4216);
-                ProductShortNameFunction("GMC -");
-            }else if (ProductName.innerHTML === "Andrex (ADX)") {
-                ProductPriceDisplay(12561);
-                ProductShortNameFunction("ADX -");
-            }else if (ProductName.innerHTML === "Nausidox (NSD)") {
-                ProductPriceDisplay(3865);
-                ProductShortNameFunction("NSD -");
-            }else if (ProductName.innerHTML === "Colla Max (CLM)") {
-                ProductPriceDisplay(3536);
-                ProductShortNameFunction("CLM -");
-            }else if (ProductName.innerHTML === "Q-10 Ultra Q10U") {
-                ProductPriceDisplay(21131);
-                ProductShortNameFunction("Q10U -");
-            }else if (ProductName.innerHTML === "Mypar-500 (MYP)") {
-                ProductPriceDisplay(753);
-                ProductShortNameFunction("MYP -");
-            }else if (ProductName.innerHTML === "KORS (ORS)") {
-                ProductPriceDisplay(870);
-                ProductShortNameFunction("ORS -");
-            }else if (ProductName.innerHTML === "Troydom (TDM)") {
-                ProductPriceDisplay(580);
-                ProductShortNameFunction("TDM -");
-            }else if (ProductName.innerHTML === "Paraquick (PQK)") {
-                ProductPriceDisplay(753);
-                ProductShortNameFunction("PQK -");
-            }else if (ProductName.innerHTML === "Cetipen10 (CTP)") {
-                ProductPriceDisplay(522);
-                ProductShortNameFunction("CTP -");
-            }else if (ProductName.innerHTML === "Loratahist (LRH)") {
-                ProductPriceDisplay(1159);
-                ProductShortNameFunction("LRH -");
-            }else if (ProductName.innerHTML === "Glucose-5D (5D)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("5D -");
-            }else if (ProductName.innerHTML === "SodiumChloride + Glucose(DNS)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("DNS -");
-            }else if (ProductName.innerHTML === "SodiumChloride (NS)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("NS -");
-            }else if (ProductName.innerHTML === "Metronidazole (MTI)") {
-                ProductPriceDisplay(802);
-                ProductShortNameFunction("MTI -");
-            }
-    
-            const productQuantityInput = document.createElement("input");
-            productQuantityInput.classList.add("productQuantityInput");
-    
-            const productQuantity = document.createElement("p");
-            productQuantity.classList.add("productQuantity");
-    
-            const productAmount = document.createElement("p");
-            productAmount.classList.add("productAmount");
-    
-            let productAmountTotalConstant = 0;
-    
-            productQuantityInput.addEventListener("keyup",(event)=>{
-                productAmount.innerHTML="";
-                productQuantity.innerHTML="";
-                totalAmountCheck.innerHTML="";
-                if (productQuantityInput.value === "") {
-                    OneProductMaindiv.remove();
-                    // productQuantityInput.value = 0;
-                    // // 
-                    // productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
-                    // productQuantity.append(event.target.value);
-                    // OneProductMaindiv.append(productQuantity,productAmount);
-    
-                }else{
-                    productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
-                    productQuantity.append(event.target.value);
-                    OneProductMaindiv.append(productQuantity,productAmount);
-                }
-                const productTotalAmount =document.querySelectorAll(".productAmount");
-                productTotalAmount.forEach((element)=>{
-                    const productAmountNumber = parseInt(element.innerHTML);
-                    productAmountTotalConstant+=productAmountNumber;
-                });
-                totalAmountCheck.append("Total Amount"+productAmountTotalConstant);
-                productAmountTotalConstant = 0;
-                TotalAmountAdd.style.display="block";
-            })
-            // productAmountArray = productAmount
-            // console.log(productAmountArray,typeof productAmountArray)
-    
-           
-            OneProductMaindiv.append(ProductName,ProductShortName,"price",ProductPrice,productQuantityInput)
-            DailyReportcalculator.append(OneProductMaindiv);
+            ProductEditMother(element);
         }else{
-            element.classList.add("AddBGColor")
-            const OneProductMaindiv = document.createElement("div");
-            OneProductMaindiv.classList.add("OneProductMaindiv")
-    
-           
-            const ProductPriceDisplay = (Number) => {
-                ProductPrice.append(Number);
-            };
-           
-            const ProductShortName = document.createElement("p");
-            ProductShortName.classList.add("ProductShortName");
-            const ProductShortNameFunction = (Name)=>{
-                ProductShortName.append(Name);
-            };
-    
-            const ProductName = document.createElement("p")
-            ProductName.textContent = element.innerHTML;
-    
-    
-            const ProductPrice = document.createElement("div");
-            ProductPrice.classList.add("ProductPrice");
-            if(ProductName.innerHTML === "LifeCort (LPI)"){
-                ProductPriceDisplay(1290);
-                ProductShortNameFunction("LPI -");
-            }else if (ProductName.innerHTML === "Ceftrialife (CFIM)") {
-                ProductPriceDisplay(1693);
-                ProductShortNameFunction("CFIM -");
-            }else if (ProductName.innerHTML === "Dicinac (DCN)") {
-                ProductPriceDisplay(2042);
-                ProductShortNameFunction("DCN -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 120ml") {
-                ProductPriceDisplay(7500);
-                ProductShortNameFunction("LCLO 120ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 120ml") {
-                ProductPriceDisplay(7500);
-                ProductShortNameFunction("LCLN 120ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 60ml") {
-                ProductPriceDisplay(5100);
-                ProductShortNameFunction("LCLO 60ml -");
-            }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 60ml") {
-                ProductPriceDisplay(5100);
-                ProductShortNameFunction("LCLO 60ml -");
-            }
-            else if (ProductName.innerHTML === "Rinotin (RNT)") {
-                ProductPriceDisplay(503);
-                ProductShortNameFunction("RNT -");
-            }else if (ProductName.innerHTML === "Lopo Plus (LPP)") {
-                ProductPriceDisplay(1131);
-                ProductShortNameFunction("LPP -");
-            }else if (ProductName.innerHTML === "Aceta X (ACX)") {
-                ProductPriceDisplay(633);
-                ProductShortNameFunction("ACX -");
-            }else if (ProductName.innerHTML === "Asclop (ACP)") {
-                ProductPriceDisplay(1320);
-                ProductShortNameFunction("ACP -");
-            }else if (ProductName.innerHTML === "Panpro20 (PNP)") {
-                ProductPriceDisplay(848);
-                ProductShortNameFunction("PNP -");
-            }else if (ProductName.innerHTML === "Perilac (PLC)") {
-                ProductPriceDisplay(1131);
-                ProductShortNameFunction("PLC -");
-            }else if (ProductName.innerHTML === "Bacron (BOT)") {
-                ProductPriceDisplay(4242);
-                ProductShortNameFunction("BOT -");
-            }else if (ProductName.innerHTML === "Mextil 500 (MXT)") {
-                ProductPriceDisplay(4619);
-                ProductShortNameFunction("MXT -");
-            }else if (ProductName.innerHTML === "Glammer Capsule (GMC)") {
-                ProductPriceDisplay(4216);
-                ProductShortNameFunction("GMC -");
-            }else if (ProductName.innerHTML === "Andrex (ADX)") {
-                ProductPriceDisplay(12561);
-                ProductShortNameFunction("ADX -");
-            }else if (ProductName.innerHTML === "Nausidox (NSD)") {
-                ProductPriceDisplay(3865);
-                ProductShortNameFunction("NSD -");
-            }else if (ProductName.innerHTML === "Colla Max (CLM)") {
-                ProductPriceDisplay(3536);
-                ProductShortNameFunction("CLM -");
-            }else if (ProductName.innerHTML === "Q-10 Ultra Q10U") {
-                ProductPriceDisplay(21131);
-                ProductShortNameFunction("Q10U -");
-            }else if (ProductName.innerHTML === "Mypar-500 (MYP)") {
-                ProductPriceDisplay(753);
-                ProductShortNameFunction("MYP -");
-            }else if (ProductName.innerHTML === "KORS (ORS)") {
-                ProductPriceDisplay(870);
-                ProductShortNameFunction("ORS -");
-            }else if (ProductName.innerHTML === "Troydom (TDM)") {
-                ProductPriceDisplay(580);
-                ProductShortNameFunction("TDM -");
-            }else if (ProductName.innerHTML === "Paraquick (PQK)") {
-                ProductPriceDisplay(753);
-                ProductShortNameFunction("PQK -");
-            }else if (ProductName.innerHTML === "Cetipen10 (CTP)") {
-                ProductPriceDisplay(522);
-                ProductShortNameFunction("CTP -");
-            }else if (ProductName.innerHTML === "Loratahist (LRH)") {
-                ProductPriceDisplay(1159);
-                ProductShortNameFunction("LRH -");
-            }else if (ProductName.innerHTML === "Glucose-5D (5D)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("5D -");
-            }else if (ProductName.innerHTML === "SodiumChloride + Glucose(DNS)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("DNS -");
-            }else if (ProductName.innerHTML === "SodiumChloride (NS)") {
-                ProductPriceDisplay(1230);
-                ProductShortNameFunction("NS -");
-            }else if (ProductName.innerHTML === "Metronidazole (MTI)") {
-                ProductPriceDisplay(802);
-                ProductShortNameFunction("MTI -");
-            }
-    
-            const productQuantityInput = document.createElement("input");
-            productQuantityInput.classList.add("productQuantityInput");
-    
-            const productQuantity = document.createElement("p");
-            productQuantity.classList.add("productQuantity");
-    
-            const productAmount = document.createElement("p");
-            productAmount.classList.add("productAmount");
-    
-            let productAmountTotalConstant = 0;
-    
-            productQuantityInput.addEventListener("keyup",(event)=>{
-                productAmount.innerHTML="";
-                productQuantity.innerHTML="";
-                totalAmountCheck.innerHTML="";
-                if (productQuantityInput.value === "") {
-                    OneProductMaindiv.remove();
-                    // productQuantityInput.value = 0;
-                    // // 
-                    // productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
-                    // productQuantity.append(event.target.value);
-                    // OneProductMaindiv.append(productQuantity,productAmount);
-    
-                }else{
-                    productAmount.append(parseInt(ProductPrice.innerHTML)*parseInt(event.target.value));
-                    productQuantity.append(event.target.value);
-                    OneProductMaindiv.append(productQuantity,productAmount);
-                }
-                const productTotalAmount =document.querySelectorAll(".productAmount");
-                productTotalAmount.forEach((element)=>{
-                    const productAmountNumber = parseInt(element.innerHTML);
-                    productAmountTotalConstant+=productAmountNumber;
-                });
-                totalAmountCheck.append("Total Amount"+productAmountTotalConstant);
-                productAmountTotalConstant = 0;
-                TotalAmountAdd.style.display="block";
-            })
-            // productAmountArray = productAmount
-            // console.log(productAmountArray,typeof productAmountArray)
-    
-           
-            OneProductMaindiv.append(ProductName,ProductShortName,"price",ProductPrice,productQuantityInput)
-            DailyReportcalculator.append(OneProductMaindiv);
+            ProductEditMother(element);
             DailyReportcalculator.classList.add("OpenDailyReportcalculator");
         }
        
@@ -709,7 +579,7 @@ SaleReportCreate.addEventListener("click", () => {
                 Samplediv.append(productArrayName[i]+productArrayQuantity[i]+" ×"+productArrayPrice[i]+" ="+productArrayAmount[i]+"ks")
                 ProductDetailsReport.append(Samplediv)
                 i++;   
-                console.log(i)
+                // console.log(i)
             }
         }
         HEEH();
