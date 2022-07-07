@@ -42,6 +42,19 @@ body{
 .TargetDisplay{
     margin-top: 2%;
 }
+.fa-trash{
+    background-color:teal ;
+    border: none;
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+.productQuantityInputUpdate,.productQuantityInput{
+    margin: 10px 0px;
+    display: block;
+}
+.ProductPrice{
+    display: inline-block;
+}
 .ProductFilder{
     position: relative;
     /* display: flex;
@@ -71,7 +84,8 @@ body{
 .ProductName{
     border: solid 2px darkslategray;
     padding: 5px;
-
+    cursor: pointer;
+    user-select: none;
 }
 .AddBGColor{
     background-color: cadetblue;
