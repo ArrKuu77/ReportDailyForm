@@ -205,7 +205,7 @@ const ProductEditMother = (element) =>{
     const productQuantityInputUpdate = document.createElement("input");
     productQuantityInputUpdate.classList.add("productQuantityInputUpdate");
     productQuantityInputUpdate.placeholder = "Update Price";
-    productQuantityInput.type = "Number"
+    productQuantityInputUpdate.type = "Number"
 
 
     const productQuantity = document.createElement("p");
