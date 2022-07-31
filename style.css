@@ -48,28 +48,30 @@ body{
     color: rgb(0, 153, 255);
     cursor: pointer;
 }
-.productQuantityInputUpdate,.productQuantityInput{
+.ProductPriceInputUpdate,.productQuantityInput{
     margin: 10px 0px;
     display: block;
 }
 .ProductPrice{
     display: inline-block;
 }
+.DailyReportcalculator {
+    width: 60%;
+}
 .ProductFilder{
-    position: relative;
-    /* display: flex;
-    justify-content: space-around; */
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
     /* width: 50%;
     margin: 0 auto;
     position: relative; */
 }
 .Product{
     display: none;
-    position: absolute;
     max-height: 350px;
     overflow: auto;
-    /* top: 10%; */
-    right: 0;
+    top: 5px;
+    position: sticky;
     background-color: whitesmoke;
     color: teal;
     padding: 5px;
@@ -200,4 +202,33 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.ProductPriceAllDelete{
+    background-color: rgba(255, 51, 0, 0.918);
+    color: black;
+    border-radius: 5%;
+    font-size: 20px;
+    padding: 1%;
+}
+.ProductPriceRemove{
+    background-color: rgb(0, 153, 255);
+    border: none;
+    text-align: center;
+    margin-left: 5px;
+    color:rgba(255, 38, 0, 0.897);
+    border-radius: 5px;
+    padding: 5px;
+}
+.CloseButton{
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color:teal ;
+    color: rgb(0, 153, 255);
+    font-size: 20px;
+    padding: 2px 5px;
+}
+.RemakeStyle{
+    position: sticky;
+    top: 10px;
 }
