@@ -84,114 +84,79 @@ const ProductEditMother = (element) =>{
 
     const ProductEdit = () =>{
         if(ProductName.innerHTML === "LifeCort (LPI)"){
-            // ProductPriceDisplay(1105);
             ProductShortNameFunction("LPI -");
         }else if (ProductName.innerHTML === "Ceftrialife (CFIM)") {
-            // ProductPriceDisplay(1450);
             ProductShortNameFunction("CFIM -");
         }else if (ProductName.innerHTML === "Dicinac (DCN)") {
-            // ProductPriceDisplay(1750);
             ProductShortNameFunction("DCN -");
         }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 120ml") {
-            // ProductPriceDisplay(7500);
             ProductShortNameFunction("LCLO 120ml -");
         }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 120ml") {
-            // ProductPriceDisplay(7500);
             ProductShortNameFunction("LCLN 120ml -");
-        }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 60ml") {
-            // ProductPriceDisplay(5100);
+        }else if (ProductName.innerHTML === "Locto-Calamine (LCLO) 60ml") { 
             ProductShortNameFunction("LCLO 60ml -");
         }else if (ProductName.innerHTML === "Locto-Calamine (LCLN) 60ml") {
-            // ProductPriceDisplay(5100);
             ProductShortNameFunction("LCLO 60ml -");
-        }
-        else if (ProductName.innerHTML === "Rinotin (RNT)") {
-            // ProductPriceDisplay(431);
+        }else if (ProductName.innerHTML === "Rinotin (RNT)") {
             ProductShortNameFunction("RNT -");
         }else if (ProductName.innerHTML === "Lopo Plus (LPP)") {
-            // ProductPriceDisplay(970);
             ProductShortNameFunction("LPP -");
         }else if (ProductName.innerHTML === "Aceta X (ACX)") {
-            // ProductPriceDisplay(543);
             ProductShortNameFunction("ACX -");
         }else if (ProductName.innerHTML === "Asclop (ACP)") {
-            // ProductPriceDisplay(1131);
             ProductShortNameFunction("ACP -");
         }else if (ProductName.innerHTML === "Panpro20 (PNP)") {
-            // ProductPriceDisplay(727);
             ProductShortNameFunction("PNP -");
         }else if (ProductName.innerHTML === "Perilac (PLC)") {
-            // ProductPriceDisplay(970);
             ProductShortNameFunction("PLC -");
         }else if (ProductName.innerHTML === "Bacron (BOT)") {
-            // ProductPriceDisplay(3636);
             ProductShortNameFunction("BOT -");
         }else if (ProductName.innerHTML === "Mextil 500 (MXT)") {
-            // ProductPriceDisplay(3959);
             ProductShortNameFunction("MXT -");
         }else if (ProductName.innerHTML === "Glammer Capsule (GMC)") {
-            // ProductPriceDisplay(7228);
             ProductShortNameFunction("GMC -");
         }else if (ProductName.innerHTML === "Andrex (ADX)") {
-            // ProductPriceDisplay(10660);
             ProductShortNameFunction("ADX -");
         }else if (ProductName.innerHTML === "Nausidox (NSD)") {
-            // ProductPriceDisplay(3280);
             ProductShortNameFunction("NSD -");
         }else if (ProductName.innerHTML === "Colla Max (CLM)") {
-            // ProductPriceDisplay(3031);
             ProductShortNameFunction("CLM -");
         }else if (ProductName.innerHTML === "Q-10 Ultra Q10U") {
-            // ProductPriceDisplay(18112);
             ProductShortNameFunction("Q10U -");
         }else if (ProductName.innerHTML === "Mypar-500 (MYP)") {
-            // ProductPriceDisplay(646);
             ProductShortNameFunction("MYP -");
         }else if (ProductName.innerHTML === "KORS (ORS)") {
-            // ProductPriceDisplay(745);
             ProductShortNameFunction("KORS -");
         }else if (ProductName.innerHTML === "Troydom (TDM)") {
-            // ProductPriceDisplay(497);
             ProductShortNameFunction("TDM -");
         }else if (ProductName.innerHTML === "Paraquick (PQK)") {
-            // ProductPriceDisplay(646);
             ProductShortNameFunction("PQK -");
         }else if (ProductName.innerHTML === "Cetipen10 (CTP)") {
-            // ProductPriceDisplay(447);
             ProductShortNameFunction("CTP -");
         }else if (ProductName.innerHTML === "Loratahist (LRH)") {
-            // ProductPriceDisplay(994);
             ProductShortNameFunction("LRH -");
         }else if (ProductName.innerHTML === "Glucose-5D (5D)") {
-            // ProductPriceDisplay(1230);
             ProductShortNameFunction("5D -");
         }else if (ProductName.innerHTML === "SodiumChloride + Glucose(DNS)") {
-            // ProductPriceDisplay(1230);
             ProductShortNameFunction("DNS -");
         }else if (ProductName.innerHTML === "SodiumChloride (NS)") {
-            // ProductPriceDisplay(1230);
             ProductShortNameFunction("NS -");
         }else if (ProductName.innerHTML === "Metronidazole (MTI)") {
-            // ProductPriceDisplay(802);
             ProductShortNameFunction("MTI -");
         }else if (ProductName.innerHTML === "Ivipime (IVI)") {
-            // ProductPriceDisplay(6957);
             ProductShortNameFunction("IVI -");
         }else if (ProductName.innerHTML === "Vansafe CP (VSI-CP)") {
-            // ProductPriceDisplay(18883);
             ProductShortNameFunction("VSI-CP");
         }else if (ProductName.innerHTML === "Sucimed (SMI)") {
-            // ProductPriceDisplay(16895);
             ProductShortNameFunction("SMI -");
         }else if (ProductName.innerHTML === "Succicort (SCI)") {
-            // ProductPriceDisplay(1491);
             ProductShortNameFunction("SCI -");
         }else if (ProductName.innerHTML === "Thiotec (TTI)") {
-            // ProductPriceDisplay(11926);
             ProductShortNameFunction("TTI -");
         }else if (ProductName.innerHTML === "Mexinem (MXI)") {
-            // ProductPriceDisplay(28324);
             ProductShortNameFunction("MXI -");
+        }else if (ProductName.innerHTML === "Tramacetamol Tablet (TMCT)") {
+            ProductShortNameFunction("TMCT");
         }
     }
     const ProductPrice = document.createElement("div");
